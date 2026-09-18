@@ -1,3 +1,9 @@
+import os
+import gradio as gr
+import spaces
+from smolagents import CodeAgent, InferenceClientModel
+from tools import search_arxiv
+
 model = InferenceClientModel(
     model_id="Qwen/Qwen2.5-Coder-32B-Instruct",
     token=os.environ.get("HF_TOKEN"))

@@ -1,3 +1,7 @@
+import arxiv
+from smolagents import tool
+
+
 @tool
 def search_arxiv(query: str, max_results: int = 3) -> list:
     """Searches arXiv for academic papers matching a query.
