@@ -8,7 +8,6 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 
 from smolagents import CodeAgent, InferenceClientModel
 from tools import search_arxiv
-)
 
 agent = CodeAgent(
     tools=[search_arxiv], 
