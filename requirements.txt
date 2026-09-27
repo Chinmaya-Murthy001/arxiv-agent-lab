@@ -2,3 +2,4 @@ smolagents
 gradio
 arxiv
 torch
+spaces
