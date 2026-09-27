@@ -9,6 +9,11 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 from smolagents import CodeAgent, InferenceClientModel
 from tools import search_arxiv
 
+model = InferenceClientModel(
+    model_id="Qwen/Qwen2.5-Coder-32B-Instruct",
+    token=HF_TOKEN,
+)
+
 agent = CodeAgent(
     tools=[search_arxiv], 
     model=model,
